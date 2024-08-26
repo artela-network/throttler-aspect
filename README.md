@@ -165,7 +165,7 @@ If the output displays the aforementioned `aspectID`, it indicates that the bind
 `scripts/batch-test.cjs` will batch send contract transactions to test the rate limiting functionality.
 
 ```bash
-$ node scripts/batch-test.cjs
+$ npm run test -- --method increment --contract <CONTRAT_ADDRESS>
 
 #0
 call contract tx hash: 0x8fbf4f2768e265045ee18a8d9c846a187656ff69b12c65776ac05958fe6ce6c9

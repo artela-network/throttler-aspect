@@ -4,10 +4,11 @@ import {
     execute,
     IPreContractCallJP,
     PreContractCallInput,
+    InitInput,
     sys,
     uint8ArrayToHex,
     UintData,
-} from "@artela/aspect-libs";
+} from "@artela-next/aspect-libs";
 import {Protobuf} from "as-proto/assembly";
 
 /**
@@ -63,6 +64,9 @@ class Aspect implements IPreContractCallJP {
      */
     isOwner(sender: Uint8Array): bool {
         return false;
+    }
+
+    init(input: InitInput): void {
     }
 }
 
